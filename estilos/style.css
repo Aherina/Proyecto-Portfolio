@@ -1,0 +1,500 @@
+/* Todas las paginas - Index.html */
+html,
+body {
+	width: 100%;
+	height: 100vh;
+	margin: 0%;
+	padding: 0%;
+	
+	
+}
+	
+
+/* INDEX.HTML */
+.contenedor-index {
+	display: grid;
+	grid-template-columns: 98%;
+	grid-template-rows: 97%;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	height: 100vh;
+	margin: 0%;
+	padding: 0%;
+
+}
+
+.contenedornav {
+	display: grid;
+	grid-template-columns: 100%;
+	align-content: center;	     	
+    background-color: white;
+	border: 3px solid #b0e0e6;
+	border-radius: 20px;	
+	}
+
+.nav {
+	display:flex;   
+	flex-direction: column;
+	width: auto;	       
+	height: 170px;   
+ 	justify-content: center;
+	align-items: center;
+	background:#b0e0e6;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.nav div {
+	padding: 10px 10px 10px 10px;
+}
+
+
+
+.menu {
+	text-align:left;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 15px;
+	margin-left: 25px;
+	line-height: 18px;
+}
+
+
+
+.menu a:link {
+	color: black;
+	text-decoration: none;
+	
+}
+
+.menu a:hover {
+	color: white;	
+	text-decoration: none;
+	text-shadow: 0.1em 0.1em 0.5em black;
+	
+}
+
+.menu a:visited {
+	color:black;
+	text-decoration: none;
+	
+}
+
+.menu a:visited:hover {
+	color: white;
+	text-decoration: none;
+	
+}
+
+
+/* barra de navegacion completa + MENU HAMBURGUESA* PAGINAS SECUNDARIAS */
+
+.nav2 {
+    display: flex;
+	width: 96.4%;
+	height: 90px;
+	min-width: 1157px; 
+	min-height: 90px; 
+    flex-wrap: nowrap;      	
+    background-color: powderBlue;
+    justify-content: space-between;
+	align-items:center;
+	padding: 0.8%;
+	border-radius: 20px;
+	position: fixed;
+	top: 20px;
+	z-index: 2;
+	
+}
+
+.nav2 img{
+	width: 190px;
+}
+
+/* MENU HAMBURGUESA*/	
+
+a {
+	text-decoration: none;
+	}
+	
+	
+	#hamburguesa {
+		display: flex;
+		align-items: center;
+	}
+		
+	
+	#menu-hamburguesa {
+		display: none;	
+		width: 500px;
+		height: 20px;	
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		font-size: 15px;
+		margin-right: 20px;
+		animation-name: opacidad;
+		animation-duration: 1s;
+		animation-iteration-count: 1;
+		animation-timing-function: ease-in;
+		animation-fill-mode: forwards;
+		transition: 1s linear;
+		justify-content: center;
+		}
+
+		
+	
+	@keyframes opacidad {
+	from { 
+	 opacity: 0;
+	 
+	}
+	
+	to {
+	 opacity: 1; 
+	 
+	}
+	}
+	
+	#boton-hamburguesa {
+		display:flex; 
+		align-items:flex-end;
+		flex-direction: row;
+		background-color :#B0E0E6;
+		color: #fff;	
+		padding: 15px 20px 20px 20px;
+		border: none;
+		cursor: pointer;
+		font-size: 40px;
+		
+		}
+	
+	.secciones-nav {
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	
+	#menu-hamburguesa a:link {
+		color: black;
+	}
+	
+	
+	#menu-hamburguesa a:hover {
+		color:white;
+		background: powderBlue;
+		text-shadow: 0.1em 0.1em 0.5em black;
+		
+	}
+	
+	#menu-hamburguesa a:visited {
+		color: black;
+	}
+	
+	#menu-hamburguesa a:visited:hover {
+		color: white;
+		text-decoration: none;
+	}
+	
+	/* FIN MENU HAMBURGUESA */
+
+
+/* Contenedor de estructura general PAGINAS SECUNDARIAS*/
+
+.contenedor-paginas-secundarias {
+	display: flex;
+	flex-direction: column;
+	width: 98%;
+	height: auto;
+	padding: 0%;
+	margin: 0% 1% 0% 1%;
+
+}
+
+/* FIN contenedores de estructura general */
+
+
+
+
+/* CONTENIDO SECCION FOTO + MEPRESENTO */
+
+.contenedor-foto-mepresento {
+    display: flex; 
+	height: 80vh;
+	top: 110px; 
+	position: relative; 
+	min-width: 1168px;
+	min-height: 742px;      	
+    background-color: white;
+	border-radius: 20px;
+    border: 3px solid powderBlue;
+	margin-top: 30px;
+	align-items: center;
+      
+       }
+
+	   
+ 
+ .foto img{
+	
+	height: 80vh;
+	min-height: 742px;
+	border-radius: 17px;
+    }
+
+    
+ .resto {
+        display:flex;
+		position: relative;
+		
+        flex-direction: column;    
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+		height: 61vh;
+        padding: 30px;
+      }
+        
+      
+ .mepresento {
+          
+          font-size: 70px;
+          display:flex;
+          width:500px;            
+          flex-direction: column;
+        }
+
+
+ .descripcion {
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          font-size: 16px;
+          display:flex;
+          width:500px;           
+          flex-direction: column;
+          text-align: justify;
+         
+        }
+
+/* FIN CONTENIDO SECCION FOTO + MEPRESENTO */
+
+
+/* CONTENIDO SECCION GALERIA */
+
+.contenedor-galeria {
+    display: flex;  
+	flex-direction: column;
+	position: relative;
+	top: 90px;
+	height: auto;   	
+	margin-top: 30px;
+	margin-bottom: 85px;
+	
+      
+       }
+
+.contenedorgaleria {
+	height: auto;
+	display:flex;
+	flex-wrap: wrap;
+	margin: 30px 30px 30px 30px;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.contenedorgaleria img {
+	width: 370px;
+	transition: width 0.2s;
+	transition-timing-function: linear;
+	margin: 5px 5px 5px 5px;
+}
+.contenedorgaleria img:hover {
+	width: 380px;
+	box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+}
+         
+
+.ilustraciones {
+	width: 700px;
+}
+      
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+     overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	text-align: center;
+	
+}
+
+.modal-galeria {
+	
+    text-align: center;
+	align-items: center;
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: auto;
+}
+
+.cerrar {
+    color:black;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+	margin: 10px 10px 0px 0px;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.flechaDch {
+    top: 250px;
+    font-size: 25px;
+    font-weight: bold;    
+	float: right;
+	margin-right: 15px;
+	position: relative;
+	
+	
+
+}
+.flechaIzq {
+    top: 250px;
+    font-size: 25px;
+    font-weight: bold;   
+	float: left;
+	margin-left: 15px;
+	position: relative;
+
+}
+
+.flechaIzq:hover,
+.flechaIzq:focus,
+.flechaDch:hover,
+.flechaDch:focus {
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*PAGINA CONTACTO y parte de footer pagina galeria*/
+
+.contenedorContacto{
+    display: flex; 
+	height: auto;
+	top: 110px; 
+	position: relative; 
+	min-width: 1168px;
+	min-height: 742px;      	
+    background-color: white;
+	border-radius: 20px;
+    border: 3px solid powderBlue;
+	margin-top: 30px;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	
+      
+       }
+
+.contenedorContacto img {
+	width: 50px;
+}
+
+.contenedorContacto div {
+	text-align: center;
+}
+
+.contenedorRedes h1 {
+	
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin: 20px 20px 20px 20px;
+}
+
+.contenedorContacto form {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin: 30px 30px 30px 80px;
+}
+
+.contenedorRedes {
+	justify-content: center;
+}
+
+
+.redes {
+	display: flex;
+	width: 330px;
+	background-color: white;
+	border-radius: 20px;
+    border: 3px solid powderBlue;
+	margin: 30px 30px 30px 30px;
+	padding: 20px 20px 20px 20px;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.redes div{
+	margin: 10px 10px 10px 10px;
+}
+
+
+.nombre,
+.correo {
+	width: 500px;
+	height: 20px;
+	
+}
+
+.redes span {
+	font-size: 20px;
+}
+
+form input, textarea {
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+form button {
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;	
+	background-color: powderBlue;
+	
+}
+
+/*PIE DE PAGINA / CONTACTO*/
+
+.piePagina{
+	display: flex;
+	width: 100%;
+	height: 50px;
+	background-color: #b0e0e6;
+	position: relative;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	align-items: center;
+}
+
+.piePagina p{
+	margin: 10px 10px 10px 10px;
+
+}
+
+
+@media screen and (min-width: 1280px){
+
+}

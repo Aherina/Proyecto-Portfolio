@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>ilustraciones</title>
+  <link rel="stylesheet" href="estilos/style.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="contenedor-paginas-secundarias"> <!-- CABECERA PARA TODAS LAS PAGINAS -->
+    <header class="nav2" id="nav2">
+      <div> <a href="index.html"><img name="logo" src="imagenes/paulaforcada.PNG"></a></div>
+      <div id="hamburguesa">
+        <nav id="menu-hamburguesa">
+          <div class="secciones-nav">
+            <a href="index.html">INICIO</a>
+            <a href="sobremi.html">SOBRE MI</a>
+            <a href="galeria.html">ILUSTRACIONES</a>
+            <a href="contacto.html">CONTACTO</a>
+          </div>
+        </nav>
+        <button id="boton-hamburguesa"><span>☰</span> </button>
+      </div>
+    </header>
+
+    <section class="contenedor-galeria">
+
+      <div class="contenedorgaleria" id="contenedorgaleria">
+        <img name="img4" src="ilustraciones/m2.PNG" onclick="abrirModal('m2.PNG')">
+        <img name="img1" src="ilustraciones/m.PNG" onclick="abrirModal('m.PNG')">
+        <img name="img2" src="ilustraciones/m4.PNG" onclick="abrirModal('m4.PNG')">
+        <img name="img3" src="ilustraciones/m3.PNG" onclick="abrirModal('m3.PNG')">
+        <img name="img7" src="ilustraciones/gatoBoceto.PNG" onclick="abrirModal('gatoBoceto.PNG')">
+        <img name="img8" src="ilustraciones/gato.PNG" onclick="abrirModal('gato.PNG')">
+        <img name="img5" src="ilustraciones/m5.PNG" onclick="abrirModal('m5.PNG')">
+        <img name="img9" src="ilustraciones/mangel.PNG" onclick="abrirModal('mangel.PNG')">
+        <img name="img6" src="ilustraciones/zenitsu.JPG" onclick="abrirModal('zenitsu.JPG')">        
+        
+      </div>
+
+      <div class="modal" id="modal">
+        <span id="cerrar" class="cerrar" onclick="cerrarModal()">X</span>
+        <div class="modal-galeria"><img class="ilustraciones" id="ilustraciones">
+          <div class="flechaDch" onclick="cambioImagen(1)">&#10095;</div>
+          <div class="flechaIzq" onclick="cambioImagen(-1)">&#10094;</div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer class="piePagina">
+     
+      
+    </footer>
+
+  </div>
+  <!--PIE DE PAGINA/CONTACTO-->
+
+
+
+
+</body>
+
+</html>
